@@ -71,4 +71,4 @@
 # [DOM nextSibling and previousSibling](./markdown/71.DOM%20nextSibling%20%26%20previousSibling.md)
 # [DOM createElement & createTextNode](./markdown/72.createElement%20%26%20createTextNode.md)
 # [DOM appendChild & insertBefore](./markdown/73.appendchild%26childbefor.md)
-# [DOM insertAdjacentElement, insertAdjacentHTML & insertAdjacentText](./markdown/74.DOM%20insert.md)
+# [DOM insertAdjacentElement, insertAdjacentHTML & insertAdjacentText ](./markdown/74.DOM%20insert.md)
