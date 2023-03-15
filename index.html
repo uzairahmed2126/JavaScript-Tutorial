@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./css/button.css">
+    <!-- <script>
+        document.write("HELLO WORLD!");
+        
+    </script> -->
+</head>
+
+<body>
+    <style>
+        .hulk{
+            background-color: white;
+            color: rgb(206, 172, 172);
+            font-size: smaller;
+            width: 90px;
+        }
+
+        .xyz{
+            background-color: rgb(20, 14, 5);
+            color: rgb(75, 10, 10);
+            font-size: 90px;
+            width: 900px;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(78, 57, 57);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .menu {
+            float: left;
+            width: auto;
+        }
+
+        .menuitem {
+            border-bottom: 1px solid #f1f1f1;
+            padding: 8px;
+            margin-top: 7px;
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        .right {
+            float: left;
+            background-color: rgb(12, 17, 19);
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+        }
+
+        @media only screen and (max-width:800px) {
+
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+
+            /* For mobile phones: */
+            .menu,
+            .main,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+    </head>
+
+    <body id="forsample">
+        <div style="background-color:#300b0b; padding: 15px;">
+            <h1 id="h1para">Cinque Terre</h1>
+            <h3>Resize the browser window</h3>
+        </div>
+
+        <div style="overflow: auto;">
+            <div class="menu">
+                <div class="menuitem">The walk </div>
+                <div class="menuitem">Transport</div>
+                <div class="menuitem" id="mid">History</div>
+                <div class="menuitem">Gallery</div>
+                <div class="menuitem">hellowold</div>
+
+
+                <div class="main">
+                    <h2>The walk</h2>
+                    <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an
+                        hou
+                        depending on the weather conditions and your physical shape.</p>
+
+                </div>
+
+                <div id="samplediv" class="right">
+                    <h2>What?</h2>
+                    <p onmousewheel="wheel()">Chinque Terre compises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore
+                    </p>
+                    <h2>Where?</h2>
+                    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+                    <h2>Price?</h2>
+                    <p ondrag="rag()">The Walk is free!</p>
+                </div>
+            </div>
+
+            <div style="background-color: f1f1f1f1; text-align: center; padding: 10px;margin-top: 7px;font-size: 12px;">
+                This web page is a part of a demonstration of fluid web design made by w3school.com. Resize the browser
+                window to see the content respond to the resizing.
+            </div>
+            <!-- <h1 style="color: #977575; background-color: #300b0b;" id="hireme"  class="c_hire" onclick="fun()" ondblclick="fun1()"> HELLO Click on me or double click on me
+            </h1> -->
+            <h1  id="hireme"  class="abc hulk"> HELLO Click on me or double click on me
+            </h1>
+            <h3 id="DOM">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sunt, dicta et hic excepturi doloribus incidunt atque ad sapiente aliquam suscipit eum dolorem perspiciatis. Facilis vero autem at harum officia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati soluta mollitia earum fuga dolores consequuntur iste tempore cum? Libero veritatis dolores consequatur assumenda perspiciatis consequuntur id odio vero facilis minus?</h3>
+            <!--
+    <button onclick="clickme()">onclick</button>
+    <button ondblclick="dblclick()">ondblclick</button>
+    <button oncontextmenu="textmenu()">oncontextmenu</button>
+    <button onmouseenter="mouseEnter()">onmouseenter</button>
+    <button onmouseout="mouseOut()">onmouseout</button>
+    <button onmousedown="mouseDown()">onmousedown</button>
+    <button onmouseup="Mouseup()">onmouseup</button>
+    enter any key<input onkeypress="keypress()"><br>
+    Enter Your name:<input onkeyup="Keyup()">
+    <h1 class="ch1">suiiii</h1> -->
+
+            <!-- <script>
+        document.write("This is JavaScript");
+        document.write("hey")
+    </script> -->
+            <!-- <button  class="btn" id="click" type="button" onclick="document.getElementById('click').innerHTML=Date()">click me</button> -->
+
+            <!-- The trace() method displays a trace that show how the code ended up at a certain point.-->
+            <!-- <button onclick="myFunction()">Start Trace</button> -->
+            <!-- <script>
+        function myFunction() {
+            myOtherFunction();
+        }
+
+        function myOtherFunction() {
+            console.trace();
+        }
+    </script> -->
+            <!-- <script src="./js/1.introduction.js"></script> -->
+            <!-- <script src="./js/2.implementation.js"></script> -->
+            <!-- <script src="./js/3.html tag in JavaScript.js"></script> -->
+            <!-- <script src="./js/4.comments.js"></script> -->
+            <!-- <script src="./js/5.variable(var).js"></script> -->
+            <!-- <script src="./js/6.variables(let & const).js"></script> -->
+            <!-- <script src="./js/7.data types.js"></script> -->
+            <!-- <script src="./js/8.arithmetic.js"></script> -->
+            <!-- <script src="./js/9.assignment.js"></script> -->
+            <!-- <script src="./js/10.google chrome console.js"></script> -->
+            <!-- <script src="./js/11.comparison operator.js"></script> -->
+            <!-- <script src="./js/12.if statement.js"></script> -->
+            <!-- <script src="./js/13.Logical Operators.js"></script> -->
+            <!-- <script src="./js/14.if else statement.js"></script> -->
+            <!-- <script src="./js/15.if else if statement.js"></script> -->
+            <!-- <script src="./js/16.ternary Operator.js"></script> -->
+            <!-- <script src="./js/17.switch statement.js"></script> -->
+            <!-- <script src="./js/18.alert box.js"></script> -->
+            <!-- <script src="./js/19.confirm box.js"></script> -->
+            <!-- <script src="./js/20.prompt box.js"></script> -->
+            <!-- <script src="./js/21.functions.js"></script> -->
+            <!-- <script src="./js/22.functions with parameters.js"></script> -->
+            <!-- <script src="./js/23.functions with return value.js"></script> -->
+            <!-- <script src="./js/24.global & local variable.js"></script> -->
+            <!-- <script src="./js/25.events.js"></script> -->
+            <!-- <script src="./js/26.while loop.js"></script> -->
+            <!-- <script src="./js/27 .do while loop.js"></script> -->
+            <!-- <script src="./js/28.for loop.js"></script> -->
+            <!-- <script src="./js/29.break & continue.js"></script> -->
+            <!-- <script src="./js/30.even and odd loop.js"></script> -->
+            <!-- <script src="./js/31.nested loop.js"></script> -->
+            <!-- <script src="./js/32.nested 2 loop.js"></script> -->
+            <!-- <script src="./js/33.array.js"></script> -->
+            <!-- <script src="./js/34.array 2.js"></script> -->
+            <!-- <script src="./js/35.multidimensional array.js"></script> -->
+            <!-- <script src="./js/36.modify and remove.js"></script> -->
+            <!-- <script src="./js/37.sort and reverse.js"></script> -->
+            <!-- <script src="./js/38.pop and push.js"></script> -->
+            <!-- <script src="./js/39.shift and unshift.js"></script> -->
+            <!-- <script src="./js/40.concat and join.js"></script> -->
+            <!-- <script src="./js/41.slice and splice.js"></script> -->
+            <!-- <script src="./js/42.isarray.js"></script> -->
+            <!-- <script src="./js/43.indexof and lastindexof.js"></script> -->
+            <!-- <script src="./js/44.include.js"></script> -->
+            <!-- <script src="./js/45.some and every.js"></script> -->
+            <!-- <script src="./js/46.find and findindex.js"></script> -->
+            <!-- <script src="./js/47.filter.js"></script> -->
+            <!-- <script src="./js/48.tostring valueof fill.js"></script> -->
+            <!-- <script src="./js/49.forEach.js"></script> -->
+            <!-- <script src="./js/50.object.js"></script> -->
+            <!-- <script src="./js/51.object part2.js"></script> -->
+            <!-- <script src="./js/52.array of object.js"></script> -->
+            <!-- <script src="./js/53. const var with array and object.js"></script> -->
+            <!-- <script src="./js/54.forIn.js"></script> -->
+            <!-- <script src="./js/55.map.js"></script> -->
+            <!-- <script src="./js/56.string method.js"></script> -->
+            <!-- <script src="./js/57.string method part2.js"></script> -->
+            <!-- <script src="./js/58.number methods.js"></script> -->
+            <!-- <script src="./js/59.math methods.js"></script> -->
+            <!-- <script src="./js/60.date methods.js"></script> -->
+            <!-- <script src="./js/61.document object module.js"></script> -->
+            <!-- <script src="./js/62.DOM targeting methods.js"></script> -->
+            <!-- <script src="./js/63.DOM get and set.js"></script> -->
+            <!-- <script src="./js/64.DOM query selector.js"></script> -->
+            <!-- <script src="./js/65.DOM css styling method.js"></script> -->
+            <!-- <script src="./js/66.DOM addEventListener.js"></script> -->
+            <!-- <script src="./js/67.DOM classList.js"></script> -->
+            <!-- <script src="./js/68.parentElement parentNode.js"></script> -->
+            <!-- <script src="./js/69.Children & childNodes.js"></script> -->
+            <!-- <script src="./js/70.DOM firstChild & lastChild.js"></script> -->
+            <!-- <script src="./js/71.DOM nextSibling & previousSibling.js"></script> -->
+            <!-- <script src="./js/72.createElement & createTextNode.js"></script> -->
+            <!-- <script src="./js/73.appendchild&childbefor.js"></script> -->
+            <script src="./js/74.DOM insert.js"></script>
+    </body>
+</html>
