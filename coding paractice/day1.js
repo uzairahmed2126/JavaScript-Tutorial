@@ -98,3 +98,19 @@ function triArea(base,height){
 console.log(triArea(3, 2));
 console.log(triArea(7, 4));
 console.log(triArea(10, 10));
+
+function incrementItems(increment){
+    // for(let i=0;i<4;i++){
+//         console.log(arr[i]+1);
+
+//    }
+//    console.log("\n")
+// return console.log(increment[0]+1,increment[1]+1,increment[2]+1,increment[3]+1);
+return increment.map(function(item){
+    return item+1;
+});
+
+}
+console.log( incrementItems([0, 1, 2, 3]) )
+console.log( incrementItems([2, 4, 6, 8]) )
+console.log( incrementItems([-1, -2, -3, -4]) )
