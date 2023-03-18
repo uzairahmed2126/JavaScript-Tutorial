@@ -38,6 +38,10 @@ let i1 = 9;
 let i2 = 3;
 i1+i2;
 i1++;
+i1++;
+i1++;
+i1++;
+
 document.write("Increment is : ",i1+12,'<br>');
 
 // Decrement
@@ -45,4 +49,20 @@ let de1 = 9;
 let de2 = 3;
 i1-i2;
 i1--;
+i1--;
+i1--;
 document.write("Decrement is : ",i1-12,'<br>');
+
+let inc = 10;
+let inc1 = 20
+let temp =inc+inc1;
+temp++;
+document.write("for your understanding : <br>" + temp +"<br>")
+
+// var x=10;
+// var y=3;
+// document.write(x+y);
+// document.write("<br>");
+// x++;
+// document.write(x);
+// document.write("<br>");
