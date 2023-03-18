@@ -72,3 +72,4 @@
 # [DOM createElement & createTextNode](./markdown/72.createElement%20%26%20createTextNode.md)
 # [DOM appendChild & insertBefore](./markdown/73.appendchild%26childbefor.md)
 # [DOM insertAdjacentElement, insertAdjacentHTML & insertAdjacentText ](./markdown/74.DOM%20insert.md)
+# [DOM replceChild & removeChild](./markdown/75.replacechild%20%26%20removechild.md)
