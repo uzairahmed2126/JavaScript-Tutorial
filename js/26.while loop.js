@@ -15,3 +15,14 @@ while(table<=20){
     console.log(table/2);
     table++;
 }
+let prnt = 1;
+while(prnt <=10){
+    console.log(prnt);
+    prnt++;
+}
+
+let tag = 10;
+while(tag>=1){
+    console.log(tag*2)
+    tag++;
+}
