@@ -33,7 +33,15 @@ let setStyle = document.querySelector("div").style.background="yellow"
 document.querySelector("div").setAttribute("style","background: green")
 
 function fn(){
-    document.querySelector("div").style.background="aqua"
+    document.querySelector("div").style.background="yellow"
     alert("you drag on div")
+    return 0;
 }
 
+
+function fn(){
+    hellowold  
+    document.querySelector("div").style.background="black"
+    document.querySelector("div").setAttribute("<div hidden>","</div>")
+    return 0;
+}

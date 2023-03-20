@@ -35,3 +35,13 @@ let firstName ="Hello";
 let lastName=" World! ";
 firstName+=lastName;
 document.write(firstName);
+
+var equal = "45";
+let  dbl = 45;
+let check = equal === dbl;
+console.log(check);
+
+let dblcheck = equal == dbl;
+console.log(dblcheck);
+// console.log(typeof equal);
+// console.log(typeof dbl);
