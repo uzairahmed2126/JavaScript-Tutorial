@@ -104,11 +104,13 @@
 
 let adnan = [1,2,23];
 let variable = adnan.keys();
-console.log(variable.next());
-console.log(variable.next());
-console.log(variable.next());
-console.log(variable.next());
-console.log(variable.next());
-console.log(variable.next());
+// console.log(variable.next());
+// console.log(variable.next());
+// console.log(variable.next());
+// console.log(variable.next());
+// console.log(variable.next());
+// console.log(variable.next());
 
+let = arrowfn => `Hello world`;
+console.log(let());
 
