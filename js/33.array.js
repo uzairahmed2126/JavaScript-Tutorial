@@ -7,5 +7,22 @@ for (let a = 0; a <= 4; a++) {
 
 let str=[true ,"hello","world"]
 for(let b=0;b<=2;b++){
-    console.log(str[1]+" "+str[2])
+    console.log(str[1]+" "+str[2]);
 }
+
+// let array = 0;
+// function multiply(assign){
+//   multiply.forEach(assign => {
+//     assign*2
+    
+//   });
+// }
+
+let multiply=[10,20,30]
+
+multiply.forEach(function(index) {
+  console.log(index*2);
+  
+});
+
+
