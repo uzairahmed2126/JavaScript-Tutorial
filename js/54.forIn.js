@@ -5,6 +5,7 @@ let a = {
     country : "poland"
 
 };
+
 for (const key in a) {
  console.log(key+ " : " + a[key])   
 }
@@ -30,4 +31,17 @@ let obj ={
 }
 for (const key in obj) {
     console.log(key + " : " +obj[key]);
+}
+
+let obj_ect = {
+    Name : "google",
+    alternate : "Chat gpt",
+    from :  "space"
+}
+
+for (const keys in object) {
+    if (Object.hasOwnProperty.call(object, keys)) {
+        const element = object[keys];
+        
+    }
 }
