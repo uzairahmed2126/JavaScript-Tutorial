@@ -25,4 +25,13 @@ multiply.forEach(function(index) {
   
 });
 
+let ary = ["uzair","ahmed",{age:19},89,true,false,Object];
+// ary.forEach (ary => {return (typeof value)});
+// console.log(value)
+ary.forEach(function(value){
+  console.log (typeof value);
+});
+
+console.log(typeof ary[2]);
+
 
