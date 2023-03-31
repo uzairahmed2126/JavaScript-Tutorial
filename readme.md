@@ -75,3 +75,4 @@
 # [DOM replceChild & removeChild](./markdown/75.replacechild%20%26%20removechild.md)
 # [DOM cloneNode](./markdown/76.DOM%20cloneNode.md)
 # [DOM contains](./markdown/77.contains.md)
+# [DOM hasAttribute & hasChildNodes](./markdown/78.hasAttribute%26haschildnodes.md)
