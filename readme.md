@@ -76,3 +76,4 @@
 # [DOM cloneNode](./markdown/76.DOM%20cloneNode.md)
 # [DOM contains](./markdown/77.contains.md)
 # [DOM hasAttribute & hasChildNodes](./markdown/78.hasAttribute%26haschildnodes.md)
+# [DOM isEqualNode](./markdown/79.isEqualNode.md)
