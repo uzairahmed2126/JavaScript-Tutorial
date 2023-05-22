@@ -8,7 +8,7 @@ console.log(now.getHours());
 console.log(now.getMinutes());
 console.log(now.getSeconds());
 console.log(now.getMilliseconds());
-document.write(now.toDateString());
+// document.write(now.toDateString());
 
 console.log(now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear());
 
@@ -23,3 +23,10 @@ console.log(now);
 
 now.setHours(4);
 console.log(now);
+
+let check = new Date();
+document.write(check.getDate()+".");
+document.write(check.getMonth()+".");
+document.write(check.getFullYear()+"<br> ");
+// document.write(now.getSeconds());
+
