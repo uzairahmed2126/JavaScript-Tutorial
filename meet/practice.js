@@ -114,3 +114,49 @@ let variable = adnan.keys();
 let = arrowfn => `Hello world`;
 console.log(let());
 
+// Create a function that transforms given values;
+const input = [1, 2, 3, 4, 5]; 
+input.forEach(number)
+function number(val){
+    return console.log(val*val)
+
+}
+// expexted output [1,4,9,16,25]
+
+
+// Create a function that sum of every (positive) intezers;
+const input2 = [1, -4, 12, 0, -3, 29, -150];
+let check = input2.filter(flt => flt > -1);
+function flt(at){
+    
+
+}
+console.log(check);
+// expected output 42;
+
+let torf=[true,false,"uzair",90,80,70,60,50]
+let check1 = torf.filter(allthing);
+function allthing(at){
+    return at >=40;
+}
+console.log(check1);
+var rndm = Math.floor(Math.random()*4)+0;
+console.log(rndm);
+
+
+// const number = parseInt(prompt('Enter the number of terms: '));
+// let n1 = 0, n2 = 1, nextTerm;
+
+// console.log('Fibonacci Series:');
+
+// for (let i = 1; i <= number; i++) {
+//     console.log(n1)
+//     nextTerm = n1 + n2;
+//     n1 = n2;
+//     n2 = nextTerm;
+
+// }if(number>=20){
+//     alert("stop");
+// }else{
+//     alert("carry on");
+// }
