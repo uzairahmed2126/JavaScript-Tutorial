@@ -35,4 +35,18 @@ ary.forEach(function(value){
 console.log(typeof ary[2]);
 
 let arry = ["uzair","ahmed",{age:19},89,true,false,Object];
-console.log(arry[2])
+console.log(arry[4]);
+
+let things = new Array(3);
+
+things[0] = "0";
+things[1] = "1";
+things[2] = "2";
+
+console.log(things[2]);
+
+let dudes = new Array ("h","e","y");
+let chicks = new Array ("h","e","l","l","o");
+
+let cnct = dudes.concat(chicks);
+console.log(cnct[4]);
