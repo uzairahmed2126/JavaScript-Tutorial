@@ -34,4 +34,5 @@ ary.forEach(function(value){
 
 console.log(typeof ary[2]);
 
-
+let arry = ["uzair","ahmed",{age:19},89,true,false,Object];
+console.log(arry[2])
