@@ -19,7 +19,7 @@
 // let length = "hey I am not a robot";
 // document.write("<br>"+length.length);
 
-// Constroctor function
+// Constructor function
 function person(name,age) {
     this.name = name;
     this.age =   age;
