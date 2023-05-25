@@ -48,5 +48,14 @@ console.log(things[2]);
 let dudes = new Array ("h","e","y");
 let chicks = new Array ("h","e","l","l","o");
 
-let cnct = dudes.concat(chicks);
-console.log(cnct[4]);
+var cnct = dudes.toString(chicks);
+console.log(cnct);
+
+var cnct = dudes.join("");
+console.log(cnct);
+var cnct = chicks.join("");
+console.log(cnct);
+
+dudes.pop();
+console.log(dudes);
+
