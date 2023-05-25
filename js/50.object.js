@@ -16,3 +16,5 @@ document.write(a.concatination());
 console.log("total of sum "+a.sum())
 console.log(a.arrconct());
 
+let length = "hey I am not a robot";
+document.write("<br>"+length.length);
