@@ -45,17 +45,27 @@ things[2] = "2";
 
 console.log(things[2]);
 
-let dudes = new Array ("h","e","y");
-let chicks = new Array ("h","e","l","l","o");
+let lang = new Array ("html" ,"css" ,"js");
+let friend_names = new Array ("sohail","ali","umer","shahid");
 
-var cnct = dudes.toString(chicks);
-console.log(cnct);
+var to_string = lang.toString(friend_names);
+// console.log(to_string);
 
-var cnct = dudes.join("");
-console.log(cnct);
-var cnct = chicks.join("");
-console.log(cnct);
+var to_string = lang.join("");
+console.log(to_string);
+var to_string = friend_names.join("");
+console.log(to_string);
 
-dudes.pop();
-console.log(dudes);
+lang.pop();
+console.log(lang);
+
+friend_names.reverse();
+console.log(friend_names);
+
+lang.push("c#","");
+console.log(lang);
+
+lang.sort();
+console.log(lang);
+
 
