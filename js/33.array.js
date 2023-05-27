@@ -49,11 +49,11 @@ let lang = new Array ("html" ,"css" ,"js");
 let friend_names = new Array ("sohail","ali","umer","shahid");
 
 var to_string = lang.toString(friend_names);
-// console.log(to_string);
-
-var to_string = lang.join("");
 console.log(to_string);
-var to_string = friend_names.join("");
+
+var to_string = lang.join(" ");
+console.log(to_string);
+var to_string = friend_names.join(" ");
 console.log(to_string);
 
 lang.pop();
@@ -68,4 +68,19 @@ console.log(lang);
 lang.sort();
 console.log(lang);
 
+// let crap  = new Array(3);
+// for(i=0; i<3 ; i++) {
+//   crap[i] = prompt("Add something to the Array:");
+//   console.log(crap[i]);
+// }
 
+let fruits = new Array ("Apple","Banana","Pears","promogrant","Kivi");
+for(i=0;i<fruits.length;i++) {
+  console.log(fruits[i]);
+}
+
+// Assosiative Array
+let n_arr = new Array();
+n_arr["color",1] = "green";
+n_arr["fruite",2] = "Apple";
+console.log("My favourite Fruit is " + n_arr[2]);
