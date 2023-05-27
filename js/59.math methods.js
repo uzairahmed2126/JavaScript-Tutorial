@@ -10,6 +10,7 @@ console.log(mceil);
 
 var mceil = Math.ceil(-0.1);
 console.log(mceil);
+
 // floor method
 var flr = Math.floor(3.2);
 console.log(flr);
@@ -37,6 +38,10 @@ console.log(mn);
 var sqr = Math.sqrt(36);
 console.log(sqr);
 
+let n = prompt('Enter a number ');
+let answer = Math.sqrt(n);
+alert('The Square Root of ' + n + ' is ' +answer);
+
 // cbrt method
 var crt = Math.cbrt(64);
 console.log(crt);
@@ -49,16 +54,16 @@ console.log(power);
 var rndm = Math.floor(Math.random()*4)+0;
 console.log(rndm);
 
-// abs method
-var absolute = Math.abs(null);
-console.log(absolute);
+// // abs method
+// var absolute = Math.abs(null);
+// console.log(absolute);
 
-var flr = Math.abs("string");
-console.log(flr);
+// var flr = Math.abs("string");
+// console.log(flr);
 
-var flr = Math.abs(3.2);
-console.log(flr);
+// var flr = Math.abs(3.2);
+// console.log(flr);
 
-// PI method
-var pi = Math.PI;
-console.log(pi);
+// // PI method
+// var pi = Math.PI;
+// console.log(pi);
