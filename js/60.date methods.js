@@ -30,3 +30,20 @@ document.write(check.getMonth()+".");
 document.write(check.getFullYear()+"<br> ");
 // document.write(now.getSeconds());
 
+// function dosomting () {
+//     console.log("hello ");
+// }
+// setInterval(dosomting,0.1);
+// if(setInterval===1000) {
+//     setTimeout(dosomting,50);
+// }
+
+function print_time() {
+    let now = new Date();
+    let hours = now.getHours();
+    let mins = now.getMinutes();
+    let secs = now.getSeconds();
+    document.write(hours+':'+mins+":"+secs+"<br>");
+    
+}
+setInterval('print_time()',1000);
