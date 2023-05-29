@@ -15,7 +15,7 @@
 
 <body>
     <style>
-        .insert-DOM {
+        /* .insert-DOM {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -25,15 +25,15 @@
             margin: 0 210px;
             list-style: none;
             background-color: gainsboro;
-            /* border-radius: 300% 100% 10% 100%; */
+            border-radius: 300% 100% 10% 100%;
             rotate: 30deg;
         }
         .fruits {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            /* align-content: center; */
-            /* align-items: center; */            
+            align-content: center;
+            align-items: center;            
         }
         .hulk {
             font-size: smaller;
@@ -75,7 +75,7 @@
 
         @media only screen and (max-width:800px) {
 
-            /* For tablets: */
+            For tablets:
             .main {
                 width: 80%;
                 padding: 0;
@@ -88,15 +88,79 @@
 
         @media only screen and (max-width:500px) {
 
-            /* For mobile phones: */
+            For mobile phones:
             .menu,
             .main,
             .right {
                 width: 100%;
             }
+        } */
+        /* Form container */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+
+        /* Input fields */
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 7px 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid  #024b0594;
+            box-sizing: border-box;
+            border-radius: 4px;
+           
+        }
+
+        /* Submit button */
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        /* Submit button on hover */
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Error message */
+        .error-message {
+            color: #ff0000;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Success message */
+        .success-message {
+            color: #00ff00;
+            font-size: 14px;
+            margin-top: 5px;
         }
     </style>
-    <!-- </head>
+    <div class="form-container">
+        <h2>Login Form</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+        <!-- </head>
+        
 
     <body id="forsample">
         <div style="background-color:#300b0b; padding: 15px;">
@@ -136,33 +200,35 @@
                 This web page is a part of a demonstration of fluid web design made by w3school.com. Resize the browser
                 window to see the content respond to the resizing.
             </div> -->
-    <!-- <h1 style="color: #977575; background-color: #300b0b;" id="hireme"  class="c_hire" onclick="fun()" ondblclick="fun1()"> HELLO Click on me or double click on me
+        <!-- <h1 style="color: #977575; background-color: #300b0b;" id="hireme"  class="c_hire" onclick="fun()" ondblclick="fun1()"> HELLO Click on me or double click on me
             </h1> -->
-    <!-- <h1  id="hireme"  class="abc hulk"> HELLO Click on me or double click on me
+        <!-- <h1  id="hireme"  class="abc hulk"> HELLO Click on me or double click on me
             </h1>
             <h3 hidden id="DOM">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sunt, dicta et hic excepturi doloribus incidunt atque ad sapiente aliquam suscipit eum dolorem perspiciatis. Facilis vero autem at harum officia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati soluta mollitia earum fuga dolores consequuntur iste tempore cum? Libero veritatis dolores consequatur assumenda perspiciatis consequuntur id odio vero facilis minus?</h3> -->
-    <div id="insert-id" class="insert-DOM">
-        <li id="unknown"></li>
-        <li>Orange</li>
-        <li></li>
-    </div>
-    <div>
-        <ul id="fruits" class="fruits" style="border: 0;">
-            <li id="unknown">dates</li>
+        <div id="insert-id" class="insert-DOM">
+            <li id="unknown"></li>
             <li>Orange</li>
-            <li>grapes</li>
-            <li>papaya</li>
             <li></li>
-        </ul>
-    </div>
-    <input id="inptid" type="text" ondrop="fn()">
-    <div id="main">
-        <label for="name">name</label>
-        <input type="text" class="name"><br>
-        <label for="password">password</label>
-        <input type="password">
-    </div>
-    <!--
+        </div>
+        <div>
+            <ul id="fruits" class="fruits" style="border: 0;">
+                <li id="unknown">dates</li>
+                <li>Orange</li>
+                <li>grapes</li>
+                <li>papaya</li>
+                <li></li>
+            </ul>
+        </div>
+        <input id="inptid" type="text" ondrop="fn()">
+        <div id="main">
+            <form action="">
+                <label for="name">name</label>
+                <input type="text" class="name"><br>
+                <label for="password">password</label>
+                <input type="password">
+            </form>
+        </div>
+        <!--
     <button onclick="clickme()">onclick</button>
     <button ondblclick="dblclick()">ondblclick</button>
     <button oncontextmenu="textmenu()">oncontextmenu</button>
@@ -174,15 +240,15 @@
     Enter Your name:<input onkeyup="Keyup()">
     <h1 class="ch1">suiiii</h1> -->
 
-    <!-- <script>
+        <!-- <script>
         document.write("This is JavaScript");
         document.write("hey")
     </script> -->
-    <!-- <button  class="btn" id="click" type="button" onclick="document.getElementById('click').innerHTML=Date()">click me</button> -->
+        <!-- <button  class="btn" id="click" type="button" onclick="document.getElementById('click').innerHTML=Date()">click me</button> -->
 
-    <!-- The trace() method displays a trace that show how the code ended up at a certain point.-->
-    <!-- <button onclick="myFunction()">Start Trace</button> -->
-    <!-- <script>
+        <!-- The trace() method displays a trace that show how the code ended up at a certain point.-->
+        <!-- <button onclick="myFunction()">Start Trace</button> -->
+        <!-- <script>
         function myFunction() {
             myOtherFunction();
         }
@@ -191,86 +257,86 @@
             console.trace();
         }
     </script> -->
-    <!-- <script src="./js/1.introduction.js"></script> -->
-    <!-- <script src="./js/2.implementation.js"></script> -->
-    <!-- <script src="./js/3.html tag in JavaScript.js"></script> -->
-    <!-- <script src="./js/4.comments.js"></script> -->
-    <!-- <script src="./js/5.variable(var).js"></script> -->
-    <!-- <script src="./js/6.variables(let & const).js"></script> -->
-    <!-- <script src="./js/7.data types.js"></script> -->
-    <!-- <script src="./js/8.arithmetic.js"></script> -->
-    <!-- <script src="./js/9.assignment.js"></script> -->
-    <!-- <script src="./js/10.google chrome console.js"></script> -->
-    <!-- <script src="./js/11.comparison operator.js"></script> -->
-    <!-- <script src="./js/12.if statement.js"></script> -->
-    <!-- <script src="./js/13.Logical Operators.js"></script> -->
-    <!-- <script src="./js/14.if else statement.js"></script> -->
-    <!-- <script src="./js/15.if else if statement.js"></script> -->
-    <!-- <script src="./js/16.ternary Operator.js"></script> -->
-    <!-- <script src="./js/17.switch statement.js"></script> -->
-    <!-- <script src="./js/18.alert box.js"></script> -->
-    <!-- <script src="./js/19.confirm box.js"></script> -->
-    <!-- <script src="./js/20.prompt box.js"></script> -->
-    <!-- <script src="./js/21.functions.js"></script> -->
-    <!-- <script src="./js/22.functions with parameters.js"></script> -->
-    <!-- <script src="./js/23.functions with return value.js"></script> -->
-    <!-- <script src="./js/24.global & local variable.js"></script> -->
-    <!-- <script src="./js/25.events.js"></script> -->
-    <!-- <script src="./js/26.while loop.js"></script> -->
-    <!-- <script src="./js/27 .do while loop.js"></script> -->
-    <!-- <script src="./js/28.for loop.js"></script> -->
-    <!-- <script src="./js/29.break & continue.js"></script> -->
-    <!-- <script src="./js/30.even and odd loop.js"></script> -->
-    <!-- <script src="./js/31.nested loop.js"></script> -->
-    <!-- <script src="./js/32.nested 2 loop.js"></script> -->
-    <!-- <script src="./js/33.array.js"></script> -->
-    <!-- <script src="./js/34.array 2.js"></script> -->
-    <!-- <script src="./js/35.multidimensional array.js"></script> -->
-    <!-- <script src="./js/36.modify and remove.js"></script> -->
-    <!-- <script src="./js/37.sort and reverse.js"></script> -->
-    <!-- <script src="./js/38.pop and push.js"></script> -->
-    <!-- <script src="./js/39.shift and unshift.js"></script> -->
-    <!-- <script src="./js/40.concat and join.js"></script> -->
-    <!-- <script src="./js/41.slice and splice.js"></script> -->
-    <!-- <script src="./js/42.isarray.js"></script> -->
-    <!-- <script src="./js/43.indexof and lastindexof.js"></script> -->
-    <!-- <script src="./js/44.include.js"></script> -->
-    <!-- <script src="./js/45.some and every.js"></script> -->
-    <!-- <script src="./js/46.find and findindex.js"></script> -->
-    <!-- <script src="./js/47.filter.js"></script> -->
-    <!-- <script src="./js/48.tostring valueof fill.js"></script> -->
-    <!-- <script src="./js/49.forEach.js"></script> -->
-    <!-- <script src="./js/50.object.js"></script> -->
-    <!-- <script src="./js/51.object part2.js"></script> -->
-    <!-- <script src="./js/52.array of object.js"></script> -->
-    <!-- <script src="./js/53. const var with array and object.js"></script> -->
-    <!-- <script src="./js/54.forIn.js"></script> -->
-    <!-- <script src="./js/55.map.js"></script> -->
-    <!-- <script src="./js/56.string method.js"></script> -->
-    <!-- <script src="./js/57.string method part2.js"></script> -->
-    <!-- <script src="./js/58.number methods.js"></script> -->
-    <!-- <script src="./js/59.math methods.js"></script> -->
-    <script src="./js/60.date methods.js"></script>
-    <!-- <script src="./js/61.document object module.js"></script> -->
-    <!-- <script src="./js/62.DOM targeting methods.js"></script> -->
-    <!-- <script src="./js/63.DOM get and set.js"></script> -->
-    <!-- <script src="./js/64.DOM query selector.js"></script> -->
-    <!-- <script src="./js/65.DOM css styling method.js"></script> -->
-    <!-- <script src="./js/66.DOM addEventListener.js"></script> -->
-    <!-- <script src="./js/67.DOM classList.js"></script> -->
-    <!-- <script src="./js/68.parentElement parentNode.js"></script> -->
-    <!-- <script src="./js/69.Children & childNodes.js"></script> -->
-    <!-- <script src="./js/70.DOM firstChild & lastChild.js"></script> -->
-    <!-- <script src="./js/71.DOM nextSibling & previousSibling.js"></script> -->
-    <!-- <script src="./js/72.createElement & createTextNode.js"></script> -->
-    <!-- <script src="./js/73.appendchild&childbefor.js"></script> -->
-    <!-- <script src="./js/74.DOM insert.js"></script> -->
-    <!-- <script src="./js/75.replacechild & removechild.js"></script> -->
-    <!-- <script src="./js/76.DOM cloneNode.js"></script> -->
-    <!-- <script src="./js/77.contains.js"></script> -->
-    <!-- <script src="./js/78.hasAttribute&haschildnodes.js"></script> -->
-    <!-- <script src="./js/79.isEqualNode.js"></script> -->
-    <!-- <script src="./js/80.form event.js"></script> -->
+        <!-- <script src="./js/1.introduction.js"></script> -->
+        <!-- <script src="./js/2.implementation.js"></script> -->
+        <!-- <script src="./js/3.html tag in JavaScript.js"></script> -->
+        <!-- <script src="./js/4.comments.js"></script> -->
+        <!-- <script src="./js/5.variable(var).js"></script> -->
+        <!-- <script src="./js/6.variables(let & const).js"></script> -->
+        <!-- <script src="./js/7.data types.js"></script> -->
+        <!-- <script src="./js/8.arithmetic.js"></script> -->
+        <!-- <script src="./js/9.assignment.js"></script> -->
+        <!-- <script src="./js/10.google chrome console.js"></script> -->
+        <!-- <script src="./js/11.comparison operator.js"></script> -->
+        <!-- <script src="./js/12.if statement.js"></script> -->
+        <!-- <script src="./js/13.Logical Operators.js"></script> -->
+        <!-- <script src="./js/14.if else statement.js"></script> -->
+        <!-- <script src="./js/15.if else if statement.js"></script> -->
+        <!-- <script src="./js/16.ternary Operator.js"></script> -->
+        <!-- <script src="./js/17.switch statement.js"></script> -->
+        <!-- <script src="./js/18.alert box.js"></script> -->
+        <!-- <script src="./js/19.confirm box.js"></script> -->
+        <!-- <script src="./js/20.prompt box.js"></script> -->
+        <!-- <script src="./js/21.functions.js"></script> -->
+        <!-- <script src="./js/22.functions with parameters.js"></script> -->
+        <!-- <script src="./js/23.functions with return value.js"></script> -->
+        <!-- <script src="./js/24.global & local variable.js"></script> -->
+        <!-- <script src="./js/25.events.js"></script> -->
+        <!-- <script src="./js/26.while loop.js"></script> -->
+        <!-- <script src="./js/27 .do while loop.js"></script> -->
+        <!-- <script src="./js/28.for loop.js"></script> -->
+        <!-- <script src="./js/29.break & continue.js"></script> -->
+        <!-- <script src="./js/30.even and odd loop.js"></script> -->
+        <!-- <script src="./js/31.nested loop.js"></script> -->
+        <!-- <script src="./js/32.nested 2 loop.js"></script> -->
+        <!-- <script src="./js/33.array.js"></script> -->
+        <!-- <script src="./js/34.array 2.js"></script> -->
+        <!-- <script src="./js/35.multidimensional array.js"></script> -->
+        <!-- <script src="./js/36.modify and remove.js"></script> -->
+        <!-- <script src="./js/37.sort and reverse.js"></script> -->
+        <!-- <script src="./js/38.pop and push.js"></script> -->
+        <!-- <script src="./js/39.shift and unshift.js"></script> -->
+        <!-- <script src="./js/40.concat and join.js"></script> -->
+        <!-- <script src="./js/41.slice and splice.js"></script> -->
+        <!-- <script src="./js/42.isarray.js"></script> -->
+        <!-- <script src="./js/43.indexof and lastindexof.js"></script> -->
+        <!-- <script src="./js/44.include.js"></script> -->
+        <!-- <script src="./js/45.some and every.js"></script> -->
+        <!-- <script src="./js/46.find and findindex.js"></script> -->
+        <!-- <script src="./js/47.filter.js"></script> -->
+        <!-- <script src="./js/48.tostring valueof fill.js"></script> -->
+        <!-- <script src="./js/49.forEach.js"></script> -->
+        <!-- <script src="./js/50.object.js"></script> -->
+        <!-- <script src="./js/51.object part2.js"></script> -->
+        <!-- <script src="./js/52.array of object.js"></script> -->
+        <!-- <script src="./js/53. const var with array and object.js"></script> -->
+        <!-- <script src="./js/54.forIn.js"></script> -->
+        <!-- <script src="./js/55.map.js"></script> -->
+        <!-- <script src="./js/56.string method.js"></script> -->
+        <!-- <script src="./js/57.string method part2.js"></script> -->
+        <!-- <script src="./js/58.number methods.js"></script> -->
+        <!-- <script src="./js/59.math methods.js"></script> -->
+        <!-- <script src="./js/60.date methods.js"></script> -->
+        <script src="./js/61.document object module.js"></script>
+        <!-- <script src="./js/62.DOM targeting methods.js"></script> -->
+        <!-- <script src="./js/63.DOM get and set.js"></script> -->
+        <!-- <script src="./js/64.DOM query selector.js"></script> -->
+        <!-- <script src="./js/65.DOM css styling method.js"></script> -->
+        <!-- <script src="./js/66.DOM addEventListener.js"></script> -->
+        <!-- <script src="./js/67.DOM classList.js"></script> -->
+        <!-- <script src="./js/68.parentElement parentNode.js"></script> -->
+        <!-- <script src="./js/69.Children & childNodes.js"></script> -->
+        <!-- <script src="./js/70.DOM firstChild & lastChild.js"></script> -->
+        <!-- <script src="./js/71.DOM nextSibling & previousSibling.js"></script> -->
+        <!-- <script src="./js/72.createElement & createTextNode.js"></script> -->
+        <!-- <script src="./js/73.appendchild&childbefor.js"></script> -->
+        <!-- <script src="./js/74.DOM insert.js"></script> -->
+        <!-- <script src="./js/75.replacechild & removechild.js"></script> -->
+        <!-- <script src="./js/76.DOM cloneNode.js"></script> -->
+        <!-- <script src="./js/77.contains.js"></script> -->
+        <!-- <script src="./js/78.hasAttribute&haschildnodes.js"></script> -->
+        <!-- <script src="./js/79.isEqualNode.js"></script> -->
+        <!-- <script src="./js/80.form event.js"></script> -->
 </body>
 
 </html>
