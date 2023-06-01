@@ -17,29 +17,33 @@
     <style>
 
     </style>
-    <div class="form-container" id="form-container">
-        <h2 id="h2">Login Form</h2>
-        <form name="Login Form">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="Username" required value="User-name">
+    <div class="main">
+        <div class="form-container" id="form-container">
+            <h2 id="h2">Login Form</h2>
+            <form name="Login Form">
+                <input type="checkbox" name="thebox">
+                <input type="button" name="press me" onclick="validator()" id="" value="Press me">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="Username" required value="User-name">
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required value="Password">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required value="Password">
 
-            <input type="submit" value="Login" id="btn" onclick="html_type()">
-        </form>
-    </div>
-    <div class="form-container-1">
-        <h2 id="h2">Sign-up Form</h2>
-        <form name="Sign-up">
-            <label for="username">Login-ID</label>
-            <input type="text" id="username" name="Login-ID" required value="Login-ID">
+                <input type="submit" value="Login" id="btn" onclick="html_type()">
+            </form>
+        </div>
+        <div class="form-container-1">
+            <h2 id="h2">Sign-up Form</h2>
+            <form name="Sign-up">
+                <label for="username">Login-ID</label>
+                <input type="text" id="username" name="Login-ID" required value="Login-ID">
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required value="Password">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required value="Password">
 
-            <input type="submit" value="Login" id="btn">
-        </form>
+                <input type="submit" value="Login" id="btn">
+            </form>
+        </div>
         <!-- </head>
     <body id="forsample">
         <div style="background-color:#300b0b; padding: 15px;">

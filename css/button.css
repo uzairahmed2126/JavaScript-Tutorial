@@ -111,6 +111,14 @@ body {
                 width: 100%;
             }
         } */
+        .main {
+            background-color: #555;
+            /* margin: auto 430px; */
+            border-radius: 10px;
+            padding: 10px;
+            height: auto;
+            width: auto;
+        }
         /* Form container */
         .form-container {
             max-width: 400px;
