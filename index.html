@@ -15,149 +15,30 @@
 
 <body>
     <style>
-        /* .insert-DOM {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            height: 600px;
-            padding: 90px;
-            margin: 0 210px;
-            list-style: none;
-            background-color: gainsboro;
-            border-radius: 300% 100% 10% 100%;
-            rotate: 30deg;
-        }
-        .fruits {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            align-items: center;            
-        }
-        .hulk {
-            font-size: smaller;
-            width: 90px;
-        }
 
-        .xyz {
-            font-size: 90px;
-            width: 900px;
-        }
-        * {
-            box-sizing: border-box;
-        }
-
-        .menu {
-            float: left;
-            width: auto;
-        }
-
-        .menuitem {
-            border-bottom: 1px solid #f1f1f1;
-            padding: 8px;
-            margin-top: 7px;
-        }
-
-        .main {
-            float: left;
-            width: 60%;
-            padding: 0 20px;
-            overflow: hidden;
-        }
-
-        .right {
-            background-color: rgb(12, 17, 19);
-            width: 20%;
-            padding: 10px 15px;
-            margin-top: 7px;
-        }
-
-        @media only screen and (max-width:800px) {
-
-            For tablets:
-            .main {
-                width: 80%;
-                padding: 0;
-            }
-
-            .right {
-                width: 100%;
-            }
-        }
-
-        @media only screen and (max-width:500px) {
-
-            For mobile phones:
-            .menu,
-            .main,
-            .right {
-                width: 100%;
-            }
-        } */
-        /* Form container */
-        .form-container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f2f2f2;
-            border-radius: 5px;
-        }
-
-        /* Input fields */
-        .form-container input[type="text"],
-        .form-container input[type="password"] {
-            width: 100%;
-            padding: 7px 10px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid  #024b0594;
-            box-sizing: border-box;
-            border-radius: 4px;
-           
-        }
-
-        /* Submit button */
-        .form-container input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            border-radius: 4px;
-        }
-
-        /* Submit button on hover */
-        .form-container input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-
-        /* Error message */
-        .error-message {
-            color: #ff0000;
-            font-size: 14px;
-            margin-top: 5px;
-        }
-
-        /* Success message */
-        .success-message {
-            color: #00ff00;
-            font-size: 14px;
-            margin-top: 5px;
-        }
     </style>
-    <div class="form-container">
-        <h2>Login Form</h2>
-        <form>
+    <div class="form-container" id="form-container">
+        <h2 id="h2">Login Form</h2>
+        <form name="Login Form">
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="Username" required value="User-name">
 
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" required value="Password">
 
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" id="btn" onclick="html_type()">
+        </form>
+    </div>
+    <div class="form-container-1">
+        <h2 id="h2">Sign-up Form</h2>
+        <form name="Sign-up">
+            <label for="username">Login-ID</label>
+            <input type="text" id="username" name="Login-ID" required value="Login-ID">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required value="Password">
+
+            <input type="submit" value="Login" id="btn">
         </form>
         <!-- </head>
     <body id="forsample">
@@ -203,7 +84,7 @@
         <!-- <h1  id="hireme"  class="abc hulk"> HELLO Click on me or double click on me
             </h1>
             <h3 hidden id="DOM">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sunt, dicta et hic excepturi doloribus incidunt atque ad sapiente aliquam suscipit eum dolorem perspiciatis. Facilis vero autem at harum officia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati soluta mollitia earum fuga dolores consequuntur iste tempore cum? Libero veritatis dolores consequatur assumenda perspiciatis consequuntur id odio vero facilis minus?</h3> -->
-        <div id="insert-id" class="insert-DOM">
+        <!-- <div id="insert-id" class="insert-DOM">
             <li id="unknown"></li>
             <li>Orange</li>
             <li></li>
@@ -225,7 +106,7 @@
                 <label for="password">password</label>
                 <input type="password">
             </form>
-        </div>
+        </div> -->
         <!--
     <button onclick="clickme()">onclick</button>
     <button ondblclick="dblclick()">ondblclick</button>
