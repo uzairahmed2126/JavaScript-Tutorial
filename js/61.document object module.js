@@ -7,6 +7,7 @@ document.write(y);
 let z = document.forms[0].elements[1].name;
 document.write(" "+z+" ");
 
+
 function html_type() {
   let Type = document.getElementById('btn')
   Type = prompt('How Color you want on click')
