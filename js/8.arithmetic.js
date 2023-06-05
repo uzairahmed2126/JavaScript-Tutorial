@@ -66,3 +66,23 @@ document.write("for your understanding : <br>" + temp +"<br>")
 // x++;
 // document.write(x);
 // document.write("<br>");
+
+let product = 2.4 * 1.3;
+product++;
+product--;
+console.log(product);
+console.log(parseInt(product));
+
+
+var add = 3 ;
+var add1 = 17;
+var add2 = 12;
+
+add += 12;  // 15
+console.log(add);
+add1 += 9 ; // 26
+console.log(add1);
+add2 += 7; // 19
+console.log(add2);
+
+
