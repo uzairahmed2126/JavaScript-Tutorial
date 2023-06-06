@@ -16,8 +16,8 @@
 
 let str =
   '          JavaScript is  great language in the world JavaScript is good'
-str.search('JavaScript');
-console.log(str);
+str.search('JavaScript')
+console.log(str)
 
 let mat = str.match(/is/g)
 console.log(mat)
@@ -48,13 +48,42 @@ document.write(IP + '\n ')
 var IP = `<a href='../html/cal.html'target='blank'>hello</a>`
 document.write(IP)
 
-var string_quotes = '<a href="https:\n\t\\helllo//www.example.com"target="_blank"\nThird'
+var string_quotes =
+  '<a href="https:\n\t\\helllo//www.example.com"target="_blank"\nThird'
 console.log(string_quotes)
 
 var ourStr = '4'
 ourStr *= '3'
 console.log(ourStr)
 
-var myStr = "This is the first sentence";
-myStr += "This is the second sentence"
-console.log(myStr);
+var myStr = 'This is the first sentence'
+myStr += ' This is the second sentence'
+console.log(myStr)
+
+myStr += ' Pyar hua tha'
+console.log(myStr)
+
+var ourName = "freeCodeCamp";
+var ourStr = "Hello, our name is " + ourName + " How are you?";
+console.log(ourStr);
+
+
+// Breaket Notation to Find First character in string
+
+var firstLetterOfFirstName = '';
+var firstName = 'John';
+firstLetterOfFirstName = firstName[0];
+
+var firstLetterOfFirstName ='';
+var lastName = '01234567';
+firstLetterOfFirstName = lastName[0];
+console.log(firstLetterOfFirstName);
+
+var Missing = "";
+var addStr  = 'jello world';
+addStr=Missing[0]='H';
+// addStr= Missing[6] = 'W';
+// Missing[6] = 'W';
+console.log(Missing);
+
+// Breaket Notation to Find (Nth) character in string
