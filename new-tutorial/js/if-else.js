@@ -20,18 +20,14 @@ let user = document.getElementById('login')
 // user=== fetch;
 // user='1';
 console.log(user) //protection about undefined
-let inpt =prompt('df');
-let inpt1 = inpt
-switch (inpt1) {
-  case 1:
-    alert('You select a number')
-    break;
-  case 2:
-    alert('you select a string')
-    break;
-  case 3:
-    alert('you select a boolean')
+let inpt = prompt('enter animal names')
+switch (inpt) {
+  case 'cat':
+  case 'dog':
+  case 'birds':
+    alert(`You select ${inpt}`)
     break;
   default:
     alert('Enter valid')
 }
+
