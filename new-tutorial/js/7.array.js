@@ -32,3 +32,14 @@ console.log(Array.isArray(try_to_check))
 // split make a new array
 let wordArray = try_to_check.split(' ')
 console.log(wordArray)
+
+// join
+let joinarray = books.join(' ')
+console.log(joinarray)
+
+// string is array of characters 
+let combine  = books.concat(wordArray);
+console.log(combine)
+
+let bookwithPages = [['math','300'],['physics','500']];
+console.log(bookwithPages)
