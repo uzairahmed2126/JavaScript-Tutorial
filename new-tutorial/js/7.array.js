@@ -24,7 +24,7 @@ console.log(typeof undefined) //undefined
 console.log(typeof document) //object
 console.log(typeof []) //object
 console.log(typeof '') //string
-console.log(typeof 334) //number 
+console.log(typeof 334) //number
 
 let try_to_check = 'isArray or not'
 console.log(Array.isArray(try_to_check))
@@ -37,9 +37,17 @@ console.log(wordArray)
 let joinarray = books.join(' ')
 console.log(joinarray)
 
-// string is array of characters 
-let combine  = books.concat(wordArray);
+// string is array of characters
+let combine = books.concat(wordArray)
 console.log(combine)
 
-let bookwithPages = [['math','300'],['physics','500']];
+let bookwithPages = [
+  ['math', '300'],
+  ['physics', '500'],
+]
 console.log(bookwithPages)
+
+let a = books.forEach(myfu);
+function myfu(a){
+    console.log(a);
+}
