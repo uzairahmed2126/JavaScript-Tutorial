@@ -24,7 +24,7 @@ console.log(typeof undefined) //undefined
 console.log(typeof document) //object
 console.log(typeof []) //object
 console.log(typeof '') //string
-console.log(typeof 334) //number
+console.log(typeof 334) //number 
 
 let try_to_check = 'isArray or not'
 console.log(Array.isArray(try_to_check))
