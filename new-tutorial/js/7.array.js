@@ -50,4 +50,9 @@ console.log(bookwithPages)
 let a = books.forEach(myfu);
 function myfu(a){
     console.log(a);
-}
+} 
+
+let b = books.forEach(element =>{
+    console.log(element)
+    
+});
