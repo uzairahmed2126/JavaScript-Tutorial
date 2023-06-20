@@ -67,9 +67,26 @@ let make = document.createElement('a')
 make.textContent = 'drag me'
 document.body.appendChild(make)
 
-function calculation(addnum){
-    for(let i=1;i<=10;i++) {
-      document.write(`${addnum} x ${i} = ${addnum*i}<br>`)
+// let creat = document.createElement('table')
+// function calculation(addnum){
+//     for(let i=1;i<=10;i++) {
+//       // document.write(`${addnum} x ${i} = ${addnum*i}<br>`)
+//      prompt('Enter tr number and name').document.createElement('tr');
+//      prompt('Enter td number and name') . document.createElement('td');
+      
+//   }
+// }
+// calculation(prompt('enter any number'));
+
+function add() {
+  let sum = 0;
+  for (var i = 0; i < arguments.length; i++){
+    sum= sum+arguments[i];
+
   }
+  console.log(sum)
 }
-calculation(prompt('enter any number'));
+
+// add(prompt("enter arguments"));
+add(4,6);
+
