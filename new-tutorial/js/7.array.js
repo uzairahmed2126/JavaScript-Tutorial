@@ -1,5 +1,6 @@
 let books = ['math', 'physics', 'bio', 'computer science']
 books.push('Urdu')
+console.log(books)
 books.pop()
 books.unshift('first')
 books.splice(1, 1)
@@ -13,10 +14,6 @@ for (let i = 0; i < books.length; i++) {
   console.log(books[i])
 }
 
-// let arr = prompt('enter array value');
-// for(let j= 0 ; j<arr.length;j++){
-//     console.log(arr[j])
-// }
 
 console.log(typeof console) //object
 console.log(typeof null) //object
@@ -47,12 +44,32 @@ let bookwithPages = [
 ]
 console.log(bookwithPages)
 
-let a = books.forEach(myfu);
-function myfu(a){
-    console.log(a);
-} 
+let a = books.forEach(myfu)
+function myfu(a) {
+  console.log(a)
+}
 
-let b = books.forEach(element =>{
-    console.log(element)
-    
-});
+let b = books.forEach((element) => {
+  console.log(element)
+})
+
+// function
+let wholeBody = (document.ondrag = function () {
+  Muliply()
+})
+function Muliply() {
+  // for(i=1;i<=10;i++) {
+  //     document.write(`2 x ${i} = ${2*i}<br>`)
+  // }
+  alert('Assalamu Alykum')
+}
+let make = document.createElement('a')
+make.textContent = 'drag me'
+document.body.appendChild(make)
+
+function calculation(addnum){
+    for(let i=1;i<=10;i++) {
+      document.write(`${addnum} x ${i} = ${addnum*i}<br>`)
+  }
+}
+calculation(prompt('enter any number'));
