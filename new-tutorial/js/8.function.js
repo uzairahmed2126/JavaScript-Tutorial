@@ -43,3 +43,10 @@ function rtn(a, b) {
 }
 let c = rtn(5, 33)
 console.log(c)
+
+// local and global variables
+function greetings(name) {
+  console.log(name)
+}
+greetings('uzair')
+
