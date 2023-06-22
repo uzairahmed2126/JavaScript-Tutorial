@@ -1,7 +1,7 @@
 // 1
 function hello() {
   let back = 'hello edabit.com'
-  console.log(back)
+  // console.log(back)
   return back
 }
 
@@ -15,7 +15,7 @@ function addition(num1, num2) {
   // }
   // console.log(sum)
   let add = arguments[0] + arguments[1]
-  console.log(add)
+  // console.log(add)
 }
 addition(3, 2)
 addition(-3, -6)
@@ -26,9 +26,9 @@ function convert() {
   let sec = arguments[0] * 60
   return sec
 }
-console.log(convert(5))
-console.log(convert(3))
-console.log(convert(2))
+// console.log(convert(5))
+// console.log(convert(3))
+// console.log(convert(2))
 
 // 4
 function addition(element) {
@@ -41,20 +41,20 @@ function addition(element) {
   // 3.method
   return element + 1
 }
-console.log(addition(0))
-console.log(addition(9))
-console.log(addition(-3))
+// console.log(addition(0))
+// console.log(addition(9))
+// console.log(addition(-3))
 
 // 5 Write a function that takes the base and height of a triangle and return its area.
 function triArea(base, height) {
   // return base*height/2
   return (arguments[0] * arguments[1]) / 2
 }
-console.log(triArea(3, 2))
+// console.log(triArea(3, 2))
 
-console.log(triArea(7, 4))
+// console.log(triArea(7, 4))
 
-console.log(triArea(10, 10))
+// console.log(triArea(10, 10))
 
 // for fayyaz
 function getFirstValue(para) {
@@ -67,17 +67,17 @@ function getFirstValue(para) {
     return para[getFirst]
   }
 }
-console.log(getFirstValue([1, 2, 3]))
-console.log(getFirstValue([80, 5, 100]))
-console.log(getFirstValue([-500, 0, 50]))
+// console.log(getFirstValue([1, 2, 3]))
+// console.log(getFirstValue([80, 5, 100]))
+// console.log(getFirstValue([-500, 0, 50]))
 
 function makePair(arr, arr1) {
   // return new Array (arr,arr1)
   return [arr, arr1]
 }
-console.log(makePair(1, 2))
-console.log(makePair(51, 21))
-console.log(makePair(512124, 215))
+// console.log(makePair(1, 2))
+// console.log(makePair(51, 21))
+// console.log(makePair(512124, 215))
 
 function drop(p1,p2) {
   let arry = [];
@@ -86,8 +86,19 @@ function drop(p1,p2) {
   }
   return arry
 }
-console.log(drop([1, 2, 3], 1))
-console.log(drop([1, 2, 3], 2))
-console.log(drop([1, 2, 3], 5))
-console.log(drop([1, 2, 3], 0))
+// console.log(drop([1, 2, 3], 1))
+// console.log(drop([1, 2, 3], 2))
+// console.log(drop([1, 2, 3], 5))
+// console.log(drop([1, 2, 3], 0))
 
+
+function reverse(arg){
+  let arr = [];
+  for(let i = arg.length-1; i>=0;i--){
+    arr.push(arg[i])
+  }
+  return arr;
+}
+console.log(reverse([1, 2, 3, 4]))
+console.log(reverse([9, 9, 2, 3, 4]))
+console.log(reverse([]))
