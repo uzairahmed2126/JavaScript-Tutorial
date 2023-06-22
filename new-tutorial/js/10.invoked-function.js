@@ -9,3 +9,20 @@ callFunc();
     let i = setTimeout(callFunc,1000);
     // console.log(i)
 })();
+
+
+
+let sameVariable = 'same1';
+function same(){
+    console.log(sameVariable)
+}
+same();
+
+
+(function () {
+let sameVariable = 'same2';
+function same(){
+    console.log(sameVariable)
+}
+same();
+})();
