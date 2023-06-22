@@ -1,5 +1,11 @@
 let callFunc = function(){
-    setTimeout(callFunc,40000)
-    console.log('helllo')
+    let i =setTimeout(callFunc,1000)
+    // console.log(i)
 }
+
 callFunc();
+// Immediately invoked function for one time work and access only one time from RAM
+(function(){
+    let i = setTimeout(callFunc,1000);
+    // console.log(i)
+})();
