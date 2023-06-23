@@ -7,22 +7,18 @@ let person = {
     console.log('helo')
 }
 }
-// console.log(person['Firstname'])
-// console.log(person.Secname)
+console.log(person['Firstname'])
+console.log(person.Secname)
 person.sayHello();
 person.age = '19'
-delete person.age
+// delete person.age
 person.Firstname = 'ali'
 
 // The in method do return true and false
 console.log('Firstname' in person)
 
 for (const key in person) {
-//   if (Object.hasOwnProperty.call(person, key)) {
-    // const element = person[key]
-    // console.log(element)
-//   }
-// console.log(key,person[key])
+console.log(key,person[key])
 }
 
 // method in object
@@ -34,4 +30,42 @@ function fncname(){
     console.log('oye');
 }
 
-// person.sayHello = fncname;
+person.sayHello = fncname();
+
+// Math Object
+let pi = Math.PI
+console.log(Math.round(pi))
+
+// round
+let decimal = 3.5
+console.log(Math.round(decimal))
+
+// Remove Whole decimal number
+console.log(Math.floor(decimal))
+
+// Round decimal into intizer number 4.1 is to be 5
+console.log(Math.ceil(decimal))
+
+// exclude whole decimal numbers
+console.log(Math.trunc(decimal))
+
+// power 2x4 it means 2x2x2x2
+console.log(Math.pow(2,19))
+
+// square root
+console.log(Math.sqrt(5))
+
+// minimum
+console.log(Math.min(0,2,4343,333,43))
+
+// maximum
+console.log(Math.max(0,2,4343,333,43))
+
+// random
+let obj = Math.floor(Math.random()*6+1)
+console.log(obj)
+function getRandom(min,max) {
+    obj = Math.floor(Math.random() * (min - max)) + 15;
+    console.log(obj)
+}
+getRandom(prompt('Enter min and max'));
