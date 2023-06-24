@@ -71,6 +71,7 @@ function getRandom(min, max) {
 // prompt(`Enter${min}  and ${max}`);
 getRandom(10, 20)
 
+
 // Date object
 let x = new Date()
 console.log(x.getTime())
