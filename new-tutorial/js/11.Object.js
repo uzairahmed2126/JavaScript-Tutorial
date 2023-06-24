@@ -65,7 +65,10 @@ console.log(Math.max(0,2,4343,333,43))
 let obj = Math.floor(Math.random()*6+1)
 console.log(obj)
 function getRandom(min,max) {
-    obj = Math.floor(Math.random() * (min - max)) + 15;
+    obj = Math.floor(Math.random() * (min - max+1)) + 15;
     console.log(obj)
 }
-getRandom(prompt('Enter min and max'));
+// prompt(`Enter${min}  and ${max}`);
+getRandom(10,20);
+
+// Date object
