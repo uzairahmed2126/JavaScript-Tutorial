@@ -75,3 +75,9 @@ getRandom(10, 20)
 let x = new Date()
 console.log(x.getTime())
 console.log(x.getMonth())
+
+// new 
+const  newObj = new Object();
+newObj.name = 'Uzair Ahmed';
+newObj.age = 19;
+console.log(newObj)
