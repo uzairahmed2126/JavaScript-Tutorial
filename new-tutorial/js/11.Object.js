@@ -72,3 +72,8 @@ function getRandom(min,max) {
 getRandom(10,20);
 
 // Date object
+let x = new Date();
+console.log(x.getTime())
+console.log(x.getMonth())
+
+ 
