@@ -94,8 +94,15 @@ const get_set = {
   get getname() {
     return this.userName.toLowerCase()
   },
+
 }
 document.write(get_set.userNameUprcase())
+
+const set = {
+    set setName (n){
+        this.name  = n.toUpperCase();
+      }
+}
 document.write(get_set.getname)
-
-
+set.setName = 'hello'
+console.log(set);
