@@ -72,14 +72,30 @@ function getRandom(min, max) {
 // prompt(`Enter${min}  and ${max}`);
 getRandom(10, 20)
 
-
 // Date object
 let x = new Date()
 console.log(x.getTime())
 console.log(x.getMonth())
 
-// new 
-const  newObj = new Object();
-newObj.name = 'Uzair Ahmed';
-newObj.age = 19;
+// new
+const newObj = new Object()
+newObj.name = 'Uzair Ahmed'
+newObj.age = 19
 console.log(newObj)
+
+// property get and set
+const get_set = {
+  userName: prompt('Enter UserName'),
+  // userName : 'Uzair Ahmed',
+  userAge: 19,
+  userNameUprcase() {
+    return this.userName.toUpperCase()
+  },
+  get getname() {
+    return this.userName.toLowerCase()
+  },
+}
+document.write(get_set.userNameUprcase())
+document.write(get_set.getname)
+
+
