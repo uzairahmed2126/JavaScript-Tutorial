@@ -2,14 +2,14 @@
 let person = {
   Firstname: 'Uzair',
   Secname: 'Ahmed',
-  license : 'no',
+  license: 'no',
   sayHello() {
     console.log('helo')
-}
+  },
 }
 console.log(person['Firstname'])
 console.log(person.Secname)
-person.sayHello();
+person.sayHello()
 person.age = '19'
 // delete person.age
 person.Firstname = 'ali'
@@ -18,19 +18,19 @@ person.Firstname = 'ali'
 console.log('Firstname' in person)
 
 for (const key in person) {
-console.log(key,person[key])
+  console.log(key, person[key])
 }
 
 // method in object
-person.sayHello = function(){
-    console.log('hello!');
+person.sayHello = function () {
+  console.log('hello!')
 }
 
-function fncname(){
-    console.log('oye');
+function fncname() {
+  console.log('oye')
 }
 
-person.sayHello = fncname();
+person.sayHello = fncname()
 
 // Math Object
 let pi = Math.PI
@@ -50,30 +50,28 @@ console.log(Math.ceil(decimal))
 console.log(Math.trunc(decimal))
 
 // power 2x4 it means 2x2x2x2
-console.log(Math.pow(2,19))
+console.log(Math.pow(2, 19))
 
 // square root
 console.log(Math.sqrt(5))
 
 // minimum
-console.log(Math.min(0,2,4343,333,43))
+console.log(Math.min(0, 2, 4343, 333, 43))
 
 // maximum
-console.log(Math.max(0,2,4343,333,43))
+console.log(Math.max(0, 2, 4343, 333, 43))
 
 // random
-let obj = Math.floor(Math.random()*6+1)
+let obj = Math.floor(Math.random() * 6 + 1)
 console.log(obj)
-function getRandom(min,max) {
-    obj = Math.floor(Math.random() * (min - max+1)) + 15;
-    console.log(obj)
+function getRandom(min, max) {
+  obj = Math.floor(Math.random() * (min - max + 1)) + 15
+  console.log(obj)
 }
 // prompt(`Enter${min}  and ${max}`);
-getRandom(10,20);
+getRandom(10, 20)
 
 // Date object
-let x = new Date();
+let x = new Date()
 console.log(x.getTime())
 console.log(x.getMonth())
-
- 
