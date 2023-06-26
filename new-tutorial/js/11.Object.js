@@ -68,6 +68,7 @@ function getRandom(min, max) {
   obj = Math.floor(Math.random() * (min - max + 1)) + 15
   console.log(obj)
 }
+
 // prompt(`Enter${min}  and ${max}`);
 getRandom(10, 20)
 
