@@ -11,8 +11,8 @@ console.log(person['Firstname'])
 console.log(person.Secname)
 person.sayHello()
 person.age = '19'
-// delete person.age
-person.Firstname = 'ali'
+delete person.age
+person.Firstname = 'sali'
 
 // The in method do return true and false
 console.log('Firstname' in person)
@@ -86,23 +86,19 @@ console.log(newObj)
 // property get and set
 const get_set = {
   userName: prompt('Enter UserName'),
-  // userName : 'Uzair Ahmed',
   userAge: 19,
-  userNameUprcase() {
-    return this.userName.toUpperCase()
-  },
   get getname() {
     return this.userName.toLowerCase()
   },
-
-}
-document.write(get_set.userNameUprcase())
-
-const set = {
-    set setName (n){
-        this.name  = n.toUpperCase();
-      }
 }
 document.write(get_set.getname)
-set.setName = 'hello'
+
+const set = {
+    set Name (n){
+        this.name = n.toLowerCase();
+      }
+}
+set.Name = 'hello'
 console.log(set);
+
+
